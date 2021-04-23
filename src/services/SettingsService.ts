@@ -3,8 +3,8 @@ import { SettingsRepository } from "../repositories/SettingsRepository";
 import { Setting } from "../entities/Setting"
 
 interface ISettingsCreate{
-    chat: boolean,
-    username: String
+    chat: boolean;
+    username: string;
 }
 
 class SettingsService{

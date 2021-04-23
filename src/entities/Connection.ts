@@ -7,16 +7,16 @@ import { User } from './User';
 class Connection{
 
     @PrimaryColumn()
-    id: String;
+    id: string;
 
     @Column()
-    admin_id: String;
+    admin_id: string;
 
     @Column()
-    user_id: String;
+    user_id: string;
 
     @Column()
-    socket_id: String;
+    socket_id: string;
 
     @JoinColumn({name: "user_id"})
     @ManyToOne(() => User)

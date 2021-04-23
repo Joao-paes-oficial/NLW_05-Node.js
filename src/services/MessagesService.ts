@@ -3,9 +3,9 @@ import { MessagesRepository } from "../repositories/MessagesRepository";
 import { Message } from "../entities/Message";
 
 interface IMessageCreate{
-    admin_id?: String;
-    text: String;
-    user_id: String;
+    admin_id?: string;
+    text: string;
+    user_id: string;
 }
 
 class MessagesService{

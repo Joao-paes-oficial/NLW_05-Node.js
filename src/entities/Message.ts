@@ -6,20 +6,20 @@ import { User } from "./User";
 class Message{
 
     @PrimaryColumn()
-    id: String;
+    id: string;
 
     @Column()
-    admin_id: String;
+    admin_id: string;
 
     @Column()
-    text: String;
+    text: string;
 
     @JoinColumn({name: "user_id"})
     @ManyToOne(() => User)
     user: User;
 
     @Column()
-    user_id: String;
+    user_id: string;
 
     @CreateDateColumn()
     created_at: Date;

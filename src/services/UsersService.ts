@@ -9,7 +9,7 @@ class UsersService {
     constructor(){
         this.usersRepository = getCustomRepository(UsersRepository);
     }
-    async create(email: String) {
+    async create(email: string) {
         //Verificar se o usuário já existe
 
         const userExists = await this.usersRepository.findOne({
